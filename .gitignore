@@ -117,3 +117,51 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# ============================================================================
+# Project-specific exclusions
+# ============================================================================
+
+# AI/Agent configuration files
+AGENTS.md
+AGENTS_HANDOFF.md
+.agents/
+.opencode/
+.opencode.json
+.opencode.jsonc
+*.handoff.md
+
+# Generated code files (regeneratable via build_runner)
+*.g.dart
+*.freezed.dart
+
+# Icon generation script (for local use only)
+generate_icons.py
+
+# Build outputs
+build/
+*.apk
+*.aab
+*.ipa
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Logs
+logs/
+*.log
+
+# Test outputs
+test/coverage/
+test_results/
